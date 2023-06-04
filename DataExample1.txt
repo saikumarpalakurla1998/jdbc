@@ -1,0 +1,80 @@
+package com.dates.test;
+
+import java.util.Calendar;
+import java.util.Date;
+
+public class DateExample1 
+{
+	public static void main(String[] args) 
+	{
+		Date d = new Date();
+		System.out.println(d);
+		
+		Calendar cal = Calendar.getInstance();
+		
+		cal.set(Calendar.DAY_OF_MONTH, 26);
+		cal.set(Calendar.MONTH, 0);
+		cal.set(Calendar.YEAR, 2012);
+		cal.set(Calendar.HOUR, 9);
+		cal.set(Calendar.MINUTE, 30);
+		cal.set(Calendar.SECOND, 45);
+		cal.set(Calendar.AM_PM, Calendar.PM);
+		
+		cal.add(Calendar.DAY_OF_MONTH, 3);
+		cal.add(Calendar.MONTH, 7);
+		cal.add(Calendar.YEAR, 5);
+		
+		Date date = cal.getTime();
+		System.out.println(date);
+		
+		//26-january-2012 09:30:45 pm
+		
+		int day = cal.get(Calendar.DAY_OF_MONTH);
+		System.out.println("day = " + day);
+		
+		int month = cal.get(Calendar.MONTH);
+		System.out.print("month = ");
+		
+		switch(month)
+		{
+		   case 0: System.out.println("january");
+		   break;
+		   case 1: System.out.println("february");
+		   break;
+		   case 2: System.out.println("march");
+		   break;
+		   case 3: System.out.println("april");
+		   break;
+		   case 4: System.out.println("may");
+		   break;
+		   case 5: System.out.println("june");
+		   break;
+		   case 6: System.out.println("july");
+		   break;
+		   case 7: System.out.println("august");
+		   break;
+		   case 8: System.out.println("september");
+		   break;
+		   case 9: System.out.println("october");
+		   break;
+		   case 10: System.out.println("november");
+		   break;
+		   case 11: System.out.println("december");
+		   break;
+		}
+		
+		System.out.println("year = " + cal.get(Calendar.YEAR));
+		
+		System.out.println("hour = " + cal.get(Calendar.HOUR));
+		System.out.println("minutes = " + cal.get(Calendar.MINUTE));
+		System.out.println("seconds = " + cal.get(Calendar.SECOND));
+		
+		int ampm = cal.get(Calendar.AM_PM);
+		
+		if(ampm == 0) {
+			System.out.println("AM");
+		}else {
+			System.out.println("PM");
+		}
+	}
+}
