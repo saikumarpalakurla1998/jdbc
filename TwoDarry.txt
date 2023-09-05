@@ -1,0 +1,16 @@
+class TwoDarry
+{
+pubilc static void main (String arg[])
+{
+int [][] a = {{20,40,50},{60,70,80},{90,100,110},{120.130}};
+
+for (int i=0; i<a.length; i++)
+{
+for (int j=0; j<a[i][j].length; j++)
+{
+system.out.println(a[i][j] + "  ");
+}
+system.out.println();
+}
+}
+}
