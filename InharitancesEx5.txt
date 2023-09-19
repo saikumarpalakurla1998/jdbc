@@ -1,0 +1,37 @@
+class Thathyya
+{
+void property1()
+{
+System.out.println("one house ");
+System.out.println("15 acears land ");
+}
+}
+class dady extends Thathyya
+{
+void property2()
+{
+System.out.println("two house ");
+System.out.println("10 acears land ");
+}
+}
+class son extends dady
+{
+void property3()
+{
+System.out.println("nill ");
+System.out.println("5 acears land ");
+}
+}
+class InharitancesEx5
+{
+public static void main(String[] args)
+{
+son s = new son();
+s.property1();
+s.property2();
+s.property3();
+}
+}
+
+
+

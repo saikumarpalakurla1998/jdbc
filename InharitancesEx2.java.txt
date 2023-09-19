@@ -1,0 +1,17 @@
+class Saikumar1
+{
+int Salary =35000;
+}
+class Saikumar2 extends Saikumar1
+{
+int bouns =25000;
+}
+class InharitancesEx2
+{
+public static void main (String[] args)
+{
+Saikumar2 sr = new Saikumar2();
+System.out.println(" Basic Salary " + sr.Salary);
+System.out.println(" bouns Salary " + sr.bouns);
+}
+}
