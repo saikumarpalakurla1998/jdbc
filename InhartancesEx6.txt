@@ -1,0 +1,30 @@
+class Animal1
+{
+void cat()
+{
+System.out.println("Miyaaow------");
+}
+}
+class Animal2 extends Animal1
+{
+void dog()
+{
+System.out.println("bhow bhow----");
+}
+}
+class Animal3 extends Animal1
+{
+void rat()
+{
+System.out.println("kitch kitch---");
+}
+}
+class InhartancesEx6
+{
+public static void main(String[] args)
+{
+Animal3 an = new Animal3();
+an.cat();
+an.rat();
+}
+}
